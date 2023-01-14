@@ -1,0 +1,65 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+span {
+    border-right: white solid 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+textarea {
+    height: 1em;
+    width: 250px;
+    resize: none;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr 1.75fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "row1 row2"
+    ;
+}
+
+.row1 {
+    text-align: center;
+    background-color: bisque;
+    color: black;
+}
+
+.row2 {
+    text-align: center;
+    align-content: center;
+    background-color: antiquewhite;
+    color: black;
+}
+
+#printSpace {
+    margin: 5vh;
+    height: 30vh;
+    background-color: bisque;
+    padding: 10vh;
+}
+
+.duration {
+    display: inline;
+}
+
+span {
+    margin: 0;
+
+}
+
+p {
+    margin: 0;
+    display: inline;
+}
+
+.inline {
+    display: inline;
+}

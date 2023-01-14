@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignmentupdate.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row1">
+            <H2>Passenger Travel Form</H2>
+            <h3>(* is required)</h3>
+
+            <!-- <form> -->
+            <label for="fname">First Name*</label><br>
+            <input type="textarea" name="fname" id="firstName" placeholder="First Name" required>
+            <br>
+            <label for="lname">Last Name*</label><br>
+            <input type="textarea" name="fname" id="lastName" placeholder="Last Name" required>
+            <br>
+            <label for="birthdate">Date of Birth</label>
+            <input type="date" name="birthdate" id="birthdate" required>
+            <br>
+            <label for="depart">Departure City*</label><br>
+            <input type="textarea" name="depart" placeholder="Departure City" id="depart" required>
+            <br>
+            <label for="arrival">Arrival City*</label><br>
+            <input type="textarea" name="arrival" placeholder="Arrival City" id="arrival" required>
+            <br>
+            <label for="leaveDate">Date Leaving*</label>
+            <input type="date" name="leaveDate" id="leaveDate" required>
+            <br>
+            <label for="returnDate">Date Returning</label>
+            <input type="date" name="returnDate" id="returnDate" required>
+            <br>
+            <br>
+            <label for="bags">How many bags?</label>
+            <input type="num" name="bags" id="bags" placeholder="0">
+
+            <br>
+
+            <label for="meal">What kind of meal would you like?</label><br>
+            <!-- use get element by name -->
+            <label for="meal">Chicken</label>
+            <input type="radio" class="meal" id="chicken" name="meal" value="Chicken">
+            <label for="meal">Fish</label>
+            <input type="radio" class="meal" id="fish" name="meal" value="Fish">
+            <label for="meal">Vegetarian</label>
+            <input type="radio" class="meal" id="vegetarian" name="meal" value="Vegetarian">
+
+            <br>
+
+            <label for="extras">Order your extras (only $10 each!)</label><br>
+            <input type="checkbox" id="legRoom" name="legRoom" value="legRoom">
+            <label for="legRoom">Extra Leg Room?</label><br>
+            <input type="checkbox" id="windowSeat" name="windowSeat" value="Window Seat?">
+            <label for="windowSeat">Window Seat?</label><br>
+            <input type="checkbox" id="Headphones" name="Headphones" value="Headphones?">
+            <label for="headphones">Headphones?</label><br>
+            <input type="checkbox" id="secondServing" name="secondServing" value="secondServing">
+            <label for="secondServing">Second serving of meal?</label>
+
+            <br>
+            <button onclick="addToList()">Add To List</button>
+
+            <!-- </form> -->
+        </div>
+
+        <div class="row2">
+            <button onclick="search()">Search</button>
+            <label for="language">Sort By:</label>
+            <select name="language" id="language">
+                <option value="ID">ID</option>
+                <option value="birthdate">birthdate</option>
+            </select>
+
+            <button onclick="print()">Print All Names</button>
+
+            <br>
+            <label for="fname">First Name</label>
+            <input type="textarea" name="fname" id="firstNamePrint" placeholder="First Name" disabled>
+
+            <label for="lname">Last Name</label>
+            <input type="textarea" name="fname" id="lastNamePrint" placeholder="Last Name" disabled>
+            <br>
+            <label for="birthdate">Date of Birth</label>
+            <input type="date" name="birthdate" id="birthdatePrint" disabled>
+            <label for="bags">How many bags?</label>
+            <input type="num" name="bags" id="bagsPrint" disabled>
+            <br>
+            <label for="depart">Departure City</label><br>
+            <input type="textarea" name="depart" placeholder="Departure City" id="departPrint" disabled>
+            <br>
+            <label for="arrival">Arrival City</label><br>
+            <input type="textarea" name="arrival" placeholder="Arrival City" id="arrivalPrint" disabled>
+            <br>
+            <label for="leaveDate">Date Leaving</label>
+            <input type="date" name="leaveDate" id="leaveDatePrint" disabled>
+
+            <label for="returnDate">Date Returning</label>
+            <input type="date" name="returnDate" id="returnDatePrint" disabled>
+
+            <br>
+            <span>
+                <p>Trip Duration:
+                <div id="durationPrint" class="inline"> 0 </div>days</p>
+                <p>Meal:<input type="text" name="mealPrint" id="mealType" disabled></p>
+                <p>Age:
+                <div id="agePrint" class="inline">1</div>
+                </p>
+            </span>
+
+            <br>
+
+            <span>
+                <p>Extras:<input type="text" name="extras" id="extrasPrint" disabled></p>
+                <p>Cost: $
+                <div id="costPrint" class="inline">1</div>
+                </p>
+            </span><br>
+
+            <input type="submit"><br>
+
+            <!-- literally just a message -->
+            <div id="updateMsg"></div>
+            <!-- name, ID, lastname stuff created when Print All Names is clicked -->
+            <div id="printSpace">
+                -
+            </div>
+
+        </div>
+
+    </div>
+    <script src="assignmentupdate.js"></script>
+</body>
+
+</html>
