@@ -63,3 +63,7 @@ p {
 .inline {
     display: inline;
 }
+
+h3{
+    margin: 1vh;
+}
