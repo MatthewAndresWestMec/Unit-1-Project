@@ -29,7 +29,7 @@ function addToList() {
     let leaveDate = document.getElementById("leaveDate").value;
     let returnDate = document.getElementById("returnDate").value;
     let bags = document.getElementById("bags").value;
-    let meal = document.getElementsByName("meal").value;
+    let meal = document.querySelector('input[name="meal"]:checked').value;
     let legRoom = document.getElementById("legRoom").value;
     let windowSeat = document.getElementById("windowSeat").value;
     let Headphones = document.getElementById("Headphones").value;
@@ -52,44 +52,57 @@ function addToList() {
         document.getElementById("windowSeat").value  = "";
         document.getElementById("Headphones").value  = "";
         document.getElementById("secondServing").value  = "";
-        // document.getElementById("id").value  = "";
         console.log(arr)
+
     }
 }
  
-function print() {
-    space = "";
-    for (let i = 0; i < arr.length; i++) {
-        space += `<div><span>${arr[i].id}</span>${arr[i].firstName} ${arr[i].lastName}
-        </div>`
-
-    }
-    document.getElementById("printSpace").innerHTML = space;
-}
+// function print() {
+//     space = "";
+//     for (let i = 0; i < arr.length; i++) {
+//         space += `<div><span><button onclick="nameSelect">${arr[i].id}</span>${arr[i].firstName} ${arr[i].lastName}</button></div>`
+//     }
+//     document.getElementById("printSpace").innerHTML = space;
+// }
  
-
-function populate() {
-    var select = document.getElementById("selectNumber");
-    select.innerHTML = `<option>Choose a number</option>`
-    for (var i = 0; i < arr.length; i++) {
-        select.innerHTML += `<option value = "${arr[i].firstName}">${arr[i].firstName}</option>`
-    // ${arr[i].birthdate} ${arr[i].depart} ${arr[i].arrival} ${arr[i].leaveDate} ${arr[i].returnDate} ${arr[i].bags} ${arr[i].meal} ${arr[i].legRoom} ${arr[i].windowSeat} ${arr[i].secondServing}
-    }
+// function nameSelect(){
     
-    document.getElementById("printSpace").innerHTML = firstName;
-    document.getElementById("printSpace").innerHTML = lastName;
-    document.getElementById("printSpace").innerHTML = birthdate;
-    document.getElementById("printSpace").innerHTML = depart;
-    document.getElementById("printSpace").innerHTML = arrival;
-    document.getElementById("printSpace").innerHTML = leaveDate;
-    document.getElementById("printSpace").innerHTML = returnDate;
-    document.getElementById("printSpace").innerHTML = bags;
-    document.getElementsByClassName("printSpace").innerHTML = meal;
-    document.getElementById("printSpace").innerHTML = legRoom;
-    document.getElementById("printSpace").innerHTML = windowSeat;
-    document.getElementById("printSpace").innerHTML = Headphones;
-    document.getElementById("printSpace").innerHTML = secondServing;
-    document.getElementById("printSpace").innerHTML = id;
-}
+// }
+
+// function checkAge(){
+//     var dateInput = document.getElementById("birthdate").value;
+//     var birthdate = new Date(dateInput);
+//     var today = new Date();
+// var age = today.getFullYear() - birthdate.getFullYear();
+// if (age >= 21) {
+//     console.log("above 21 years old");
+// } else {
+//     console.log("under 21 years old");
+// }
+// }
+
+// function populate() {
+//     var select = document.getElementById("selectNumber");
+//     select.innerHTML = `<option>Choose a number</option>`
+//     for (var i = 0; i < arr.length; i++) {
+//         select.innerHTML += `<option value = "${arr[i].firstName}">${arr[i].firstName}</option>`
+//     // ${arr[i].birthdate} ${arr[i].depart} ${arr[i].arrival} ${arr[i].leaveDate} ${arr[i].returnDate} ${arr[i].bags} ${arr[i].meal} ${arr[i].legRoom} ${arr[i].windowSeat} ${arr[i].secondServing}
+//     }
+    
+//     document.getElementById("printSpace").innerHTML = firstName;
+//     document.getElementById("printSpace").innerHTML = lastName;
+//     document.getElementById("printSpace").innerHTML = birthdate;
+//     document.getElementById("printSpace").innerHTML = depart;
+//     document.getElementById("printSpace").innerHTML = arrival;
+//     document.getElementById("printSpace").innerHTML = leaveDate;
+//     document.getElementById("printSpace").innerHTML = returnDate;
+//     document.getElementById("printSpace").innerHTML = bags;
+//     document.getElementsByClassName("printSpace").innerHTML = meal;
+//     document.getElementById("printSpace").innerHTML = legRoom;
+//     document.getElementById("printSpace").innerHTML = windowSeat;
+//     document.getElementById("printSpace").innerHTML = Headphones;
+//     document.getElementById("printSpace").innerHTML = secondServing;
+//     document.getElementById("printSpace").innerHTML = id;
+// }
  
  

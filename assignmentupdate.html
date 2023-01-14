@@ -111,7 +111,7 @@
                 <div id="durationPrint" class="inline"> 0 </div>days</p>
                 <p>Meal:<input type="text" name="mealPrint" id="mealType" disabled></p>
                 <p>Age:
-                <div id="agePrint" class="inline">1</div>
+                <div id="agePrint" class="inline">-</div>
                 </p>
             </span>
 
@@ -120,11 +120,11 @@
             <span>
                 <p>Extras:<input type="text" name="extras" id="extrasPrint" disabled></p>
                 <p>Cost: $
-                <div id="costPrint" class="inline">1</div>
+                <div id="costPrint" class="inline">-</div>
                 </p>
             </span><br>
 
-            <input type="submit"><br>
+            <button onclick="populate()">Submit</button><br>
 
             <!-- literally just a message -->
             <div id="updateMsg"></div>
