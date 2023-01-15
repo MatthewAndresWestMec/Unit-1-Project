@@ -36,13 +36,13 @@
         <input type="radio" name="meal" value="vegetarian" id="vegetarian">
         <label for="vegetarian">Vegetarian</label><br>
         <h3>Extras:</h3>
-        <input type="checkbox" name="extras" value="leg" id="leg">
-        <label for="leg">Extra Leg Room</label><br>
-        <input type="checkbox" name="extras" value="win" id="window">
+        <input type="checkbox" name="extras" value="Extra Room" id="extraRoom">
+        <label for="extraRoom">Extra Leg Room</label><br>
+        <input type="checkbox" name="extras" value="Window Seat" id="Window">
         <label for="window">Window Seat</label><br>
-        <input type="checkbox" name="extras" value="hp" id="hp">
+        <input type="checkbox" name="extras" value="Headphones" id="Headphones">
         <label for="hp">Headphones</label><br>
-        <input type="checkbox" name="extras" value="ss" id="ss">
+        <input type="checkbox" name="extras" value="2nd Serving" id="2nd Servin">
         <label for="ss">Second Serving</label><br>
         <button onclick="addToList()">Add to list</button>
         <button onclick="print()">print</button>
@@ -57,28 +57,30 @@
             <option value="fName">First Name</option>
         </select>
         <button>Search</button>
+        <br>
             
             <label for="firstNameInfo">First Name:</label>
             <input type="text" id="firstNameInfo">
             <label for="lastNameInfo">Last Name:</label>
-            <input type="text" id="lastNameInfo">
+            <input type="text" id="lastNameInfo"><br>
             <label for="dobInfo">Birth Date:</label>
             <input type="date" id="dobInfo" required>
+            <label for="bagsInfo">Bags:</label>
+            <input type="text" id="bagsInfo" required><br>
             <label for="departInfo">Departure City:</label>
             <input type="text" id="departInfo" required>
             <label for="arrivalInfo">Arrival City:</label>
-            <input type="text" id="arrivalInfo" required>
+            <input type="text" id="arrivalInfo" required><br>
             <label for="departureDateInfo">Departure Date:</label>
             <input type="date" id="departureDateInfo" required>
             <label for="returnDateInfo">Arrival Date:</label>
-            <input type="date" id="returnDateInfo" required>
-            <label for="bagsInfo">Bags:</label>
-            <input type="text" id="bagsInfo" required>
+            <input type="date" id="returnDateInfo" required><br>
+            
 
         <label for="mealInfo">Meal Type:</label>
         <input type="text" name="mealInfo" id="mealInfo">
         <label for="extraInfo">Extras:</label>
-        <input type="text" name="extraInfo" id="extraInfo">
+        <input type="text" name="extraInfo" id="extraInfo"><br>
         <button onclick="newText()" id="sub">Submit</button>
         <div id="printSpace"></div>
     </div>

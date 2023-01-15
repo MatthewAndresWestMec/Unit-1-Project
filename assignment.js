@@ -16,15 +16,7 @@ class list {
         this.time = 0;
     }
 }
-var personFake1 = new list("Misato", "Katsuragi", "1986-12-08", "Los Angeles", "Alberta", "2023-02-13", "2023-05-16","1","vegetarian", "leg ", "1")
-var personFake2 = new list("Micheal", "Reeves", "2001-11-03", "Washingtin", "Charleston", "2024-01-13", "2024-01-16","3","chicken", "leg hp ss ", "2")
-var personFake3 = new list("Lain", "Iwakura", "2007-7-06", "Charleston", "Tuscon", "2022-01-13", "2022-01-16","2","fish", "leg win ", "3")
-var arr = []
-var ids =["firstName", "lastName", "dob", "depart","arrival","departureDate","returnDate","bags"]
-var arr2 =["firstNameInfo", "lastNameInfo", "dobInfo", "departInfo","arrivalInfo","departureDateInfo","returnDateInfo","bagsInfo"]
-arr.push(personFake1)
-arr.push(personFake2)
-arr.push(personFake3)
+
 let idCheck = 0;
 let count = 4;
 let meal = "";
@@ -111,3 +103,13 @@ function print() {
     document.getElementById("printSpace").innerHTML = space;
     console.log(arr)
 }
+
+var personFake1 = new list("Misato", "Katsuragi", "1986-12-08", "Los Angeles", "Alberta", "2023-02-13", "2023-05-16","1","vegetarian", "Extra Room ", "1")
+var personFake2 = new list("Micheal", "Reeves", "2001-11-03", "Washingtin", "Charleston", "2024-01-13", "2024-01-16","3","chicken", "Extra Room Headphones 2nd Serving ", "2")
+var personFake3 = new list("Lain", "Iwakura", "2007-7-06", "Charleston", "Tuscon", "2022-01-13", "2022-01-16","2","fish", "Extra Room Window Seat ", "3")
+var arr = []
+var ids =["firstName", "lastName", "dob", "depart","arrival","departureDate","returnDate","bags"]
+var arr2 =["firstNameInfo", "lastNameInfo", "dobInfo", "departInfo","arrivalInfo","departureDateInfo","returnDateInfo","bagsInfo"]
+arr.push(personFake1)
+arr.push(personFake2)
+arr.push(personFake3)
